@@ -4,6 +4,13 @@ Link to the wordle game:
 
 https://www.nytimes.com/games/wordle/index.html
 
+
+The app is live at:
+
+https://wordle-rest-api.lm.r.appspot.com/words
+
+
+
 HOW TO USE THIS API?
 
 For simplicity we’re going to assume the server is running on localhost:8080.
@@ -56,6 +63,10 @@ Let us analyse this: the exclude=abc parameter means that none of these words sh
 Secondly, the parameter “yellow=1s” means that while the word should contain the letter S somewhere, it should not be found at index 1.
 
 Lastly, the parameter “green=5y1m” means that the word should contain the letter Y at index 5 and it should contain the letter M at index 1.
+
+If you wish to reset the list of words go to:
+
+http://localhost:8080/words/reset
 
 
 Here is an example of an app which could use such an API:
